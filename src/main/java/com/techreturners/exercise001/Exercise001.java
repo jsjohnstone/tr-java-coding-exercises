@@ -17,10 +17,19 @@ public class Exercise001 {
     }
 
     public String reverse(String sentence) {
-        return "";
+        StringBuilder r = new StringBuilder(); 
+        r.append(sentence); 
+        r = r.reverse();
+        return r.toString();
     }
 
     public int countLinuxUsers(List<User> users) {
-        return 0;
+        int count = 0;
+        for (int i = 0; i < users.size(); i++) {
+            if(users.get(i).getType() == "Linux") {
+                count++;
+            };
+        };
+        return count;
     }
 }
