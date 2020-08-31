@@ -30,6 +30,6 @@ public class Exercise001 {
                 count++;
             };
         };
-        return count;
+        return 0;
     }
 }
