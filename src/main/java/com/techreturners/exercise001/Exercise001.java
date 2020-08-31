@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
-        return Character.toUpperCase(word.charAt(0)) + word.substring(1);
+        return word.substring(0,1).toUpperCase() + word.substring(1);
     }
 
     public String generateInitials(String firstName, String lastName) {
@@ -12,7 +12,8 @@ public class Exercise001 {
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        return 0.0;
+        double result = (originalPrice * 100) + ( originalPrice * vatRate );
+        return Math.round(result) / 100.0;
     }
 
     public String reverse(String sentence) {
